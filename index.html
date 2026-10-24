@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoColeta - Agendamento de Recolha</title>
+   
+    <link rel="stylesheet" href="ecocolet.css">
+</head>
+<body>
+    <header>
+        <h1>🌱 EcoColeta</h1>
+        <p>O seu portal para o descarte sustentável e consciente.</p>
+    </header>
+    
+    <main>
+        <section class="form-section">
+            <h2>Agendar Recolha</h2>
+            <form id="form-recolha">
+                <div class="input-group">
+                    <label for="morada">Morada Completa:</label>
+                    <input type="text" id="morada" required placeholder="Ex: Rua da Sustentabilidade, 123">
+                </div>
+                
+                <div class="input-group">
+                    <label for="material">Tipo de Material:</label>
+                    <select id="material" required>
+                        <option value="">Selecione o material...</option>
+                        <option value="Plástico e Papel">Plástico e Papel</option>
+                        <option value="Lixo Eletrónico">Lixo Eletrónico</option>
+                        <option value="Óleo de Cozinha">Óleo de Cozinha Usado</option>
+                    </select>
+                </div>
+                
+                <div class="input-group">
+                    <label for="data">Data de Recolha:</label>
+                    <input type="date" id="data" required>
+                </div>
+                
+                <button type="submit">Confirmar Agendamento</button>
+            </form>
+        </section>
+
+        <section class="lista-section">
+            <h2>Recolhas Agendadas</h2>
+            <div id="lista-recolhas">
+                <p class="empty-msg">Nenhuma recolha agendada de momento.</p>
+            </div>
+        </section>
+    </main>
+    
+    
+    <script src="ecocolet.js"></script>
+</body>
+</html>
